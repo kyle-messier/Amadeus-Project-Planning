@@ -1,0 +1,77 @@
+\begin{titlepage}
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[AcceleratorGreen] (current page.north west) rectangle ([yshift=-0.24in]current page.north east);
+  \fill[AcceleratorGreen] ([xshift=-0.16in]current page.north east) rectangle (current page.south east);
+  \fill[AcceleratorGreenLight] ([xshift=-0.43in]current page.south east) rectangle ([xshift=-0.16in]current page.north east);
+\end{tikzpicture}
+
+\vspace*{0.10in}
+
+\noindent
+\begin{minipage}[t]{0.34\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=1.70in]{images/nih-data-accelerator-logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.61\textwidth}
+  \vspace{0.08in}
+  \raggedleft\sffamily
+  {\Large\bfseries\textcolor{AcceleratorGreenDark}{NIH DATA ACCELERATOR}}\\[4pt]
+  {\large\textcolor{AcceleratorTeal}{PROJECT PLANNING TEMPLATE}}\\[10pt]
+  {\small\textcolor{AcceleratorGray}{\OrganizationUnit}}
+\end{minipage}
+
+\vspace{0.14in}
+\noindent\textcolor{AcceleratorGreen}{\rule{\textwidth}{2.2pt}}
+
+\vspace{0.20in}
+{\sffamily\fontsize{25}{29}\selectfont\bfseries\textcolor{AcceleratorGreenDark}{\ProjectTitle}\par}
+\vspace{0.10in}
+% {\sffamily\Large\textcolor{AcceleratorTeal}{\ProjectSubtitle}\par}
+
+\vspace{0.20in}
+
+\begingroup
+\renewcommand{\arraystretch}{1.27}
+\arrayrulecolor{AcceleratorBorder}
+\begin{tabularx}{\textwidth}{|>{\columncolor{AcceleratorGreen}\color{white}\bfseries\sffamily}L{1.72in}|Y|}
+  % \hline
+  % Project ID & \ProjectID \\
+  \hline
+  Project lead & \ProjectLead \\
+  \hline
+  Executive sponsor & \ExecutiveSponsor \\
+  \hline
+  Organization / unit & \OrganizationUnit \\
+  \hline
+  Planned period & \ProjectStartDate\ to \ProjectEndDate \\
+  \hline
+  Document version & \DocumentVersion \\
+  \hline
+  Document date & \DocumentDate \\
+  \hline
+  Project status & \ProjectStatus \\
+  \hline
+  Prepared by & \PreparedBy \\
+  \hline
+\end{tabularx}
+\endgroup
+
+\vspace{0.13in}
+\noindent\begin{minipage}{0.96\textwidth}
+% \small\sffamily\textcolor{AcceleratorGray}{\textbf{Purpose.} This plan defines the project's outcomes, scope, governance, work plan, data and technical approach, resources, risks, communication, quality controls, and transition criteria. Replace prompts and example rows before approval.}
+\end{minipage}
+
+\vfill
+\noindent
+\begin{minipage}[t]{0.66\textwidth}
+  \sffamily\footnotesize\textcolor{AcceleratorGray}{\Classification}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.28\textwidth}
+  \raggedleft\sffamily\footnotesize\textcolor{AcceleratorGray}{Version \DocumentVersion}
+\end{minipage}
+
+\end{titlepage}

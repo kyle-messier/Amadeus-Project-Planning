@@ -1,0 +1,63 @@
+\documentclass[letterpaper]{common/accelerator}
+
+% -----------------------------------------------------------------------------
+% PROJECT METADATA - edit these values first
+% -----------------------------------------------------------------------------
+\renewcommand{\ProjectTitle}{Amadeus Maintence and Improvement Plans}
+\renewcommand{\ProjectSubtitle}{Project Planning}
+\renewcommand{\ProjectShortTitle}{Amadeus}
+% \renewcommand{\ProjectID}{}
+\renewcommand{\ProjectLead}{Kyle P Messier, PhD, Principal Investigator}
+\renewcommand{\ExecutiveSponsor}{NIEHS HEW Data Accelerator}
+\renewcommand{\OrganizationUnit}{HEW Accelerator and SET group}
+\renewcommand{\PreparedBy}{Kyle P Messier}
+\renewcommand{\DocumentVersion}{0.1}
+\renewcommand{\DocumentDate}{\today}
+\renewcommand{\ProjectStartDate}{September 10, 2026}
+\renewcommand{\ProjectEndDate}{March 1, 2027}
+\renewcommand{\ProjectStatus}{v2.x}
+\renewcommand{\Classification}{Internal planning document}
+
+% Keep guidance boxes visible while drafting. Change to \showguidancefalse for a
+% clean final plan.
+\showguidancetrue
+
+\graphicspath{{images/}}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+\input{common/titlepage}
+\hypersetup{pageanchor=true}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{sections/00_document_control}
+\input{sections/01_executive_summary}
+\input{sections/02_project_overview}
+\input{sections/03_objectives_success_criteria}
+\input{sections/04_scope_deliverables}
+\input{sections/05_stakeholders_governance}
+\input{sections/06_work_plan_schedule}
+\input{sections/07_data_methods_technical}
+\input{sections/08_resources_budget}
+\input{sections/09_risks_issues_dependencies}
+\input{sections/10_communication_reporting}
+\input{sections/11_quality_security_compliance}
+\input{sections/12_implementation_closeout}
+\input{sections/13_approvals}
+
+\clearpage
+\printbibliography[heading=bibintoc,title={References}]
+
+\appendix
+\input{sections/99_appendices}
+
+\end{document}

@@ -1,0 +1,55 @@
+\section{Data, Methods, and Technical Approach}
+
+\guidance{Tailor this section to the project. For analytic or research projects, emphasize data provenance, methods, validation, and reproducibility. For infrastructure or product projects, emphasize architecture, interfaces, environments, testing, operations, and service levels.}
+
+\subsection{Data Source Inventory}
+{\small
+\begin{tabularx}{\textwidth}{L{1.15in} L{1.05in} Y L{0.85in} L{0.85in} Y}
+\toprule
+\TableHead{Dataset / source} & \TableHead{Owner / custodian} & \TableHead{Purpose and population} & \TableHead{Refresh} & \TableHead{Sensitivity} & \TableHead{Access, provenance, and quality notes} \\
+\midrule
+\placeholder{Source name} & \placeholder{Role / organization} & \placeholder{Planned use and coverage} & \placeholder{Cadence} & \placeholder{Level} & \placeholder{Authority, access path, lineage, known limitations} \\
+\placeholder{Source name} & \placeholder{Role / organization} & \placeholder{Planned use and coverage} & \placeholder{Cadence} & \placeholder{Level} & \placeholder{Notes} \\
+\bottomrule
+\end{tabularx}
+}
+
+\subsection{Scientific, Analytic, or Technical Method}
+\placeholder{Describe the conceptual model, study or evaluation design, analytic methods, algorithms, software or infrastructure pattern, major interfaces, and rationale for key choices. State alternatives considered and material tradeoffs.}
+
+\subsection{Processing and Architecture Flow}
+\begin{center}
+\fcolorbox{AcceleratorBorder}{AcceleratorLightGray}{%
+  \parbox[c][1.65in][c]{0.92\textwidth}{%
+    \centering\sffamily\textcolor{AcceleratorGray}{%
+      Insert a data flow, system architecture, analytic pipeline, or study workflow diagram here.\\[6pt]
+      \small Example: \texttt{\textbackslash includegraphics[width=0.9\textbackslash textwidth]\{images/architecture.pdf\}}
+    }%
+  }%
+}
+\end{center}
+
+\subsection{Reproducibility and Configuration Management}
+\begin{tabularx}{\textwidth}{L{1.7in} Y}
+\toprule
+\TableHead{Element} & \TableHead{Planned control} \\
+\midrule
+Source code and analysis & \placeholder{Repository, branching, review, release tagging, code ownership.} \\
+Data and metadata & \placeholder{Versioning, snapshots, data dictionary, lineage, retention.} \\
+Environments and dependencies & \placeholder{Environment specification, containers, package lock files, infrastructure as code.} \\
+Parameters and decisions & \placeholder{Configuration files, model cards, analysis plan, decision log.} \\
+Reproduction evidence & \placeholder{Run records, seeds, logs, checksums, automated workflow, archived outputs.} \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Validation and Evaluation Plan}
+\begin{tabularx}{\textwidth}{L{1.35in} Y Y L{1.05in}}
+\toprule
+\TableHead{Validation area} & \TableHead{Method / test} & \TableHead{Acceptance threshold} & \TableHead{Owner} \\
+\midrule
+Data quality & \placeholder{Completeness, validity, consistency, timeliness, bias checks} & \placeholder{Threshold} & \placeholder{Role} \\
+Method or model performance & \placeholder{Benchmark, holdout, external validation, sensitivity analysis} & \placeholder{Threshold} & \placeholder{Role} \\
+Technical performance & \placeholder{Reliability, latency, capacity, security, recovery} & \placeholder{Threshold} & \placeholder{Role} \\
+User or operational fitness & \placeholder{Usability, workflow fit, pilot, acceptance testing} & \placeholder{Threshold} & \placeholder{Role} \\
+\bottomrule
+\end{tabularx}
